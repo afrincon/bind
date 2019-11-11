@@ -1,0 +1,10 @@
+# Zone statement for forward DNS lookup
+zone "servicios.com" IN {
+    type master;
+    file "servicios.com";
+};
+# Zone statement for reverse DNS lookup
+zone "50.168.192.in-addr.arpa" IN {
+    type master;
+    file "rev-servicios.com";
+};
